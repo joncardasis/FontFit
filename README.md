@@ -12,8 +12,8 @@
     <img src="./.github/demo2.gif" width=300 />
 </p>
 
-## Purpose
-FontFit adjusts the `font` size of a view (i.e. `UILabel` or `UITextView`) to fill it's container.
+## Abstract
+FontFit scales the `font` size of a text element (i.e. `UILabel` or `UITextView`) to fill it's container.
 
 FontFit is the missing inverse of `sizeToFit()`. The `FontFit` extensions are a more detailed implementation of UILabel's [adjustsFontSizeToFitWidth](https://developer.apple.com/documentation/uikit/uilabel/1620546-adjustsfontsizetofitwidth) which only _reduces_ font size.
 
