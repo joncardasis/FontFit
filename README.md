@@ -1,8 +1,8 @@
 # FontFit
 
 <p align="center">
-    <img src="./.github/demo1.gif" width=200 />
-    <img src="./.github/demo2.gif" width=200 />
+    <img src="./.github/demo1.gif" width=300 />
+    <img src="./.github/demo2.gif" width=300 />
 </p>
 
 ## Purpose
