@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: AutoFitLabel!
     @IBOutlet weak var labelWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var labelHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var preferredLinesLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,22 @@ class ViewController: UIViewController {
         label.layer.cornerRadius = 6.0
         label.layer.masksToBounds = true
         label.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
+    }
+    
+    // MARK: - IBActions
+    
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        let preferredNumberOfLines = UInt(sender.value)
+        
+        if preferredNumberOfLines == 0 {
+            label.autosizeFontToNumberOfLines = nil
+            preferredLinesLabel.text = "N/A"
+        } else {
+            label.autosizeFontToNumberOfLines = preferredNumberOfLines
+            preferredLinesLabel.text = "\(preferredNumberOfLines)"
+        }
+        
+        label.layoutIfNeeded()
     }
     
     @IBAction func shrinkWidth(_ sender: Any) {
