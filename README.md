@@ -1,5 +1,10 @@
 # FontFit
 
+<p align="center">
+    <img src="./.github/demo1.gif" width=200 />
+    <img src="./.github/demo2.gif" width=200 />
+</p>
+
 ## Purpose
 FontFit adjusts the `font` size of a view (i.e. `UILabel` or `UITextView`) to fill it's container.
 
