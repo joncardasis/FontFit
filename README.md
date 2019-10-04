@@ -1,4 +1,6 @@
-<h1 align="center">FontFit</h1>
+<p align="center">
+    <img src=".github/Logo.png" width="320" alt="ChromaColorPicker 2.0" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Swift-5.0-orange.svg" />
